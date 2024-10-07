@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMG Background Remover</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/imgbgremover.png">
+</head>
+<body>
+
+  <div class="header">
+    <header>
+      <h1>Image Background Remover</h1>
+      <p>Created by: <a href="https://github.com/davenarchives" target="_blank" id="creator-link">DavenArchives</a></p>
+    </header>
+  </div>
+
+  <div class="container">
+    <h2>Upload an image to remove the background</h2>
+    
+    <div id="drop-area">
+      <p>Drag & Drop files here or</p>
+      <button id="choose-file-btn">Choose File</button>
+      <input type="file" id="fileElem" accept="image/*" style="display:none">
+    </div>
+    
+    <div id="output">
+      <div id="comparison" style="display: none;"> 
+        <div class="image-container" id="before-image">
+          <h2>Before</h2>
+          <img id="originalImage" alt="Original Image">
+        </div>
+        <div class="image-container" id="after-image">
+          <h2>After</h2>
+          <img id="processedImage" alt="Processed Image">
+        </div>
+      </div>
+    </div>
+    
+    <a id="downloadBtn" class="hidden" download="removed-background.png">Download Image</a>
+    <button id="resetBtn" class="hidden">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
