@@ -22,6 +22,7 @@ body {
   position: absolute; /* Position it at the top */
   top: 10; /* Align to the top of the viewport */
   z-index: 100; /* Keep above other content */
+  user-select: none;
 }
 
 .header h1 {
