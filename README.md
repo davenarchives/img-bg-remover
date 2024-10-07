@@ -1,6 +1,6 @@
 <h1>Image Background Remover</h1>
 
-This project provides a simple web application that allows users to upload an image and automatically remove its background. It utilizes the [remove.bg](https://www.remove.bg/) API for processing images, making it easy for users to obtain images with transparent backgrounds.
+This project provides a simple web application that allows users to upload an image and automatically remove its background. It utilizes the [remove.bg](https://www.remove.bg/api) API for processing images, making it easy for users to obtain images with transparent backgrounds.
 
 ## Screenshot
 ![Screenshot 2024-10-07 235919](https://github.com/user-attachments/assets/cb03c073-c29c-468e-8e30-cf0648d46182)
