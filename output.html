@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processed Image</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="output">
+    <div id="comparison"> 
+      <div class="image-container" id="before-image">
+        <h2>Before</h2>
+        <img id="originalImage" alt="Original Image">
+      </div>
+      <div class="image-container" id="after-image">
+        <h2>After</h2>
+        <img id="processedImage" alt="Processed Image">
+      </div>
+    </div>
+    
+    <div class="button-container">
+      <a id="downloadBtn" download="removed-background.png">Download Image</a>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </div>
+
+  <script src="output.js"></script>
+</body>
+</html>
