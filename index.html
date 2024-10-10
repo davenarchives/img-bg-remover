@@ -6,6 +6,7 @@
   <title>IMG Background Remover</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="images/imgbgremover.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -30,7 +31,10 @@
         
         <div class="url-container">
           <p id="p3">or</p>
-          <input type="text" id="imageUrlInput" placeholder="Paste image URL here">
+          <div class="input-wrapper">
+            <input type="text" id="imageUrlInput" placeholder="Paste image URL here">
+            <button id="clear-url-btn"><i class='bx bx-x-circle'></i></button>
+        </div>
         </div>
       </div>
     </div>

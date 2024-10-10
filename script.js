@@ -1,5 +1,6 @@
 const dropArea            = document.getElementById('drop-area');
 const fileInput           = document.getElementById('fileElem');
+const clearUrlBtn = document.getElementById('clear-url-btn');
 const imageUrlInput       = document.getElementById('imageUrlInput');
 const output              = document.getElementById('output');
 const downloadBtn         = document.getElementById('downloadBtn');
@@ -150,6 +151,10 @@ function enableDownload(imageUrl) {
   downloadBtn.classList.remove('hidden');
   resetBtn.classList.remove('hidden');
 }
+
+clearUrlBtn.addEventListener('click', () => {
+  imageUrlInput.value = '';  // Clear the input
+});
 
 resetBtn.addEventListener('click', () => {
   originalImage.src = '';

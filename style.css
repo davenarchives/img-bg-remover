@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #292826;
   color: white;
   display: flex;
@@ -67,7 +67,7 @@ body {
 }
 
 .upload-container #p1 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .upload-container #p2,
@@ -142,6 +142,36 @@ h2 {
   background-color: #1a1a1a;
   color: #fff;
   text-indent: 10px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 200px; /* Match the input width */
+}
+
+#imageUrlInput {
+  width: 100%; /* Full width inside wrapper */
+  padding-right: 30px; /* Space for the button */
+}
+
+#clear-url-btn {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: #ffffff;
+  display: flex; /* Added flex to center icon */
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Ensure it's horizontally centered too */
+}
+
+#clear-url-btn:hover {
+  color: #3ABEF9;
 }
 
 #comparison {
