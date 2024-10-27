@@ -66,7 +66,7 @@ function uploadFile(file) {
   fetch('https://api.remove.bg/v1.0/removebg', {
     method: 'POST',
     headers: {
-      'X-Api-Key': 'UartFkyZmYmZfJvykz6e5AAG',
+      'X-Api-Key': 'PJ6coatQNuA8gZHZHaU7XLex',
     },
     body: formData
   })
@@ -118,7 +118,7 @@ function uploadFileFromBlob(blob) {
   fetch('https://api.remove.bg/v1.0/removebg', {
     method: 'POST',
     headers: {
-      'X-Api-Key': 'UartFkyZmYmZfJvykz6e5AAG',
+      'X-Api-Key': 'PJ6coatQNuA8gZHZHaU7XLex',
     },
     body: formData
   })
@@ -164,3 +164,18 @@ resetBtn.addEventListener('click', () => {
   resetBtn.classList.add('hidden');
   output.classList.add('hidden');
 });
+function showOutput() {
+  comparisonContainer.style.display = 'flex';
+  output.classList.remove('hidden');
+}
+function showOutput() {
+  comparisonContainer.style.display = 'flex';
+  output.classList.remove('hidden');
+
+  // Smoothly scroll to the output section and ensure it's fully visible
+  output.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+  // Optionally, set focus to the output container to ensure it's active
+  output.focus({ preventScroll: true });
+}
+
